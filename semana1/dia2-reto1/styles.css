@@ -14,18 +14,20 @@ body{
 main{
     /*border: 3px solid red;*/
     width: 700px;
-    height: 500;
+    height: 500px;
     display: flex;
-    border-radius: 14px;
+    border-radius: 10px;
     overflow:hidden;
 }
 
 .photo{
     /*border: 3px solid rgb(0, 255, 98);*/
-    width: 350px;
+
+    width: 360px;
     background-image: url(./assets/images/illustration-sign-up-desktop.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    border: 10px solid #fff;
 
 }
 
@@ -56,19 +58,19 @@ main{
     text-align: left;
 }
 
-.list-items {
+.lista-items {
     display: flex;
     flex-direction: column;
     gap: 10px; /* Espacio entre los párrafos */
 }
 
-.list-items p {
+.lista-items p {
     display: flex;
     align-items: center; /* Alinea verticalmente la imagen y el texto */
     margin: 0;
 }
 
-.list-items img {
+.lista-items img {
     width: 24px; /* Ajusta el tamaño de la imagen según sea necesario */
     height: auto; /* Mantiene la relación de aspecto */
     margin-right: 10px; /* Espacio entre la imagen y el texto */
