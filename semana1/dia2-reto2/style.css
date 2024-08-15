@@ -48,7 +48,7 @@ main {
 .content h1{
     margin: 0;
     color:black;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .content button{
@@ -65,7 +65,7 @@ main {
 .content p{
     margin: 0;
     color: rgb(26, 29, 28);
-    font-size: 12px;
+    font-size: 10px;
     color: #51517f;
 }
 
