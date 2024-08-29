@@ -11,6 +11,186 @@
 >
 </head>
 <body>
-    <h1>formulario mas imputs y validaciones</h1>
+    <main class="container">
+        <h1>formulario mas imputs y validaciones</h1>
+
+        <form>
+            <h2>imputs</h2>
+
+            <label for="text1"> inputs tipo texto</label>
+            <input type="text" placeholder="ingresa algun texto" id="text1" />
+
+            <label>
+                Input (solo lectura)
+                <input type="text" placeholder="input de solo lectura" readonly value="copia este texto" />
+            </label>
+
+            <label>
+                Input (desactivado)
+                <input type="text" placeholder="input desactivado" disabled value="hola wilder"/>
+            </label>
+
+            <label>
+                input tipo number
+                <input type="number" placeholder="edad ej. 18" name="edad" id="name"/>
+            </label>
+
+            <label>
+                input tipo email
+                <input type="email" placeholder="correo ej. soywilder@gmail.com" name="email" />
+            </label>
+
+            <label>
+                input tipo range (edad)
+                <input type="range" name="range_edad" min="1" max="100" step="10"/>
+            </label>
+
+            <label>
+                input tipo tel
+                <input type="tel" placeholder="(51) 999 999 999" />
+            </label>
+
+            <label>
+                input tipo url
+                <input type="url" placeholder="sitio web" />
+            </label>
+
+            <label>
+                input tipo pasword
+                <input type="password" placeholder="password" />
+            </label>
+
+            <label>
+                input tipo color
+                <input type="color" />
+            </label>
+
+            <label>
+                input tipo search (cuadro de buscador)
+                <input type="search" />
+            </label>
+
+            <label>
+                input tipo file (seleccionar.jpg) uno a la vez
+                <input type="file" accept="jpg, jpeg"/>
+            </label>
+
+            <label>
+                input tipo file (seleccionar multiples archivos)
+                <input type="file" multiple/>
+            </label>
+
+            <input type="hidden" value="datos-ocultos" />
+            <input type="submit" value="guardar" />
+            <input type="reset" value="limpiar" />
+            </form>
+
+            <form>
+                <h2>Input tipo fecha</h2>
+
+                <label>
+                    input tipo datatime-local (fecha y hora)
+                    <input type="datetime-local" name="fecha" />
+                </label>
+
+                <label>
+                    input tipo data (día)
+                    <input type="date" name="día" />
+                </label>
+
+                <label>
+                    input tipo week (semana)
+                    <input type="week" name="semana" />
+                </label>
+
+                <label>
+                    input tipo data (mes)
+                    <input type="month" name="mes" />
+                </label>
+
+                <input type="submit" value="guardar" />
+            </form>
+
+            <form>
+                <h2><Textarea</h2>
+                <label>
+                    <textarea placeholder="Escribir una descripcion sobre ti..." 
+                    rows="10" cols="4" name="biografia1"></textarea>
+                </label>
+
+                <label>
+                    <textarea placeholder="Escribir una descripcion sobre ti..." 
+                    rows="10" cols="4" name="biografia2"></textarea>
+                </label>
+
+                <input type="submit" value="guardar" />
+            </form>
+
+            <form>
+
+                <h2>Selects</h2>
+
+                <label>
+                    comida favorita
+                    <select name="comidas">
+                        <option> selecciona tu comida favorita...</option>
+                        <option value="fr">francesa</option>
+                        <option value="it">italiana</option>
+                        <option value="jp">japonesa</option>
+                        <option value="pe">peruana</option>
+                        <option value="th">tailandesa</option>
+                    </select>
+                </label>
+
+                <input type="submit" value="guardar" />
+            </form>
+
+            <form>
+                <h2>Checkboxes</h2>
+
+                <h3>Leguajes de preferencia:</h3>
+                <label>
+                    <input type="checkbox" name="english" value="en">
+                    Ingles
+                </label>
+
+                <label>
+                    <input type="checkbox" name="spanish" value="es">
+                    Español
+                </label>
+
+                <label>
+                    <input type="checkbox" name="dothraki" value="do">
+                    Dothraki
+                </label>
+
+                <input type="submit" value="guardar" />
+            </form>
+
+            <form>
+                <h2>Radio buttons</h2>
+
+                <h3>Leguajes de preferencia:</h3>
+                <label>
+                    <input type="radio" name="Languaje1" value="en">
+                    Ingles
+                </label>
+
+                <label>
+                    <input type="radio" name="Languaje1" value="es">
+                    Español
+                </label>
+
+                <label>
+                    <input type="radio" name="Languaje1" value="do">
+                    Dothraki
+                </label>
+
+                <input type="submit" value="guardar" />
+            </form>
+
+
+        </form>
+    </main>
 </body>
 </html>
