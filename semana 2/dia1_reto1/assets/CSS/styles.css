@@ -1,0 +1,63 @@
+body { 
+    margin: 0;
+
+    background-color: hsl(148, 38%, 91%);
+
+    display: flex;                /* movimiento flexible*/
+    justify-content: center;   /* centra en forma lineal*/
+    align-items: center;      /* centra en forma vertical*/
+
+    height: 100vh;   /* altura total de la venta 100vh = 100%*/
+
+}
+
+.contact-form{
+    width: 400px;  /* hancho de la caja por px en forma lineal*/
+
+    background-color: hsl(0,0%,100%);  /* para colocar color*/
+    padding: 30px;    /* para tener espacion en el cuadro tipo margenes*/
+
+    border-radius: 15px; /* para los bordes esquina del contenedor*/
+}
+
+
+label{
+    display: block;
+    margin-bottom: 16px; 
+}
+
+
+label input, 
+label textarea {
+    display: block;  /*block (movimiento en bloque) */
+    width: 100%;      /*ejem de width 100% es para ocupar espacio de izquiera a derecha todo*/
+    margin-top: 10px;  /*para margenes entre lineas, cuadros, textos*/
+    padding: 8px;
+    margin-bottom: 16px; 
+
+}
+
+
+h1{
+    margin: 0px;
+    margin-bottom: 32px; 
+
+}
+
+
+.row{  /*para poner dos o mas cuadros en misma linea */
+    display: flex;  /* movimiento flexible*/
+    gap: 25px;
+    justify-content: center;
+
+}
+
+
+.query-type {
+    border: 1px solid red;
+    display: flex;    /* movimiento flexible*/
+    justify-content: flex-start;   /* centra en forma lineal*/
+    align-items: center;      /* centra en forma vertical*/
+    width: 100%; 
+    
+}
