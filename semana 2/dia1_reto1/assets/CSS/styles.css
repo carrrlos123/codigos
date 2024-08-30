@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
 body { 
     margin: 0;
 
@@ -7,7 +10,9 @@ body {
     justify-content: center;   /* centra en forma lineal*/
     align-items: center;      /* centra en forma vertical*/
 
-    height: 100vh;   /* altura total de la venta 100vh = 100%*/
+    height:100vh;   /* altura total de la venta 100vh = 100%*/
+
+    font-family: "Karla", sans-serif;
 
 }
 
@@ -15,9 +20,9 @@ body {
     width: 400px;  /* hancho de la caja por px en forma lineal*/
 
     background-color: hsl(0,0%,100%);  /* para colocar color*/
-    padding: 30px;    /* para tener espacion en el cuadro tipo margenes*/
+    padding: 32px;    /* para tener espacion en el cuadro tipo margenes*/
 
-    border-radius: 15px; /* para los bordes esquina del contenedor*/
+    border-radius: 16px; /* para los bordes esquina del contenedor*/
 }
 
 
@@ -29,11 +34,9 @@ label{
 
 label input, 
 label textarea {
-    display: block;  /*block (movimiento en bloque) */
-    width: 100%;      /*ejem de width 100% es para ocupar espacio de izquiera a derecha todo*/
-    margin-top: 10px;  /*para margenes entre lineas, cuadros, textos*/
-    padding: 8px;
-    margin-bottom: 16px; 
+    display: flex;
+
+    margin-top: 8px;
 
 }
 
@@ -41,23 +44,67 @@ label textarea {
 h1{
     margin: 0px;
     margin-bottom: 32px; 
+    color: hsl(187, 24%, 22%);
 
 }
 
 
 .row{  /*para poner dos o mas cuadros en misma linea */
-    display: flex;  /* movimiento flexible*/
-    gap: 25px;
-    justify-content: center;
+    display: grid;  /* movimiento flexible*/
+    gap: 16px;
+    grid-template-columns: 1fr 1fr;
 
 }
 
 
 .query-type {
-    border: 1px solid red;
+    border: 1px solid hsl(186, 15%, 59%);
     display: flex;    /* movimiento flexible*/
     justify-content: flex-start;   /* centra en forma lineal*/
     align-items: center;      /* centra en forma vertical*/
-    width: 100%; 
+    gap: 4px;
+    padding: 16px;
+    margin-top: 8px;
+    border-radius: 8px;
     
 }
+
+
+
+
+
+
+input[type='radio'] {
+    margin: 0;
+  }
+  
+  input[type='text'],
+  textarea {
+    border-radius: 8px;
+    border: 1px solid hsl(186, 15%, 59%);
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .required {
+    color: hsl(169, 82%, 27%);
+    font-weight: 700;
+  }
+  
+  input[type='submit'] {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(169, 82%, 27%);
+    border: 1px solid hsl(169, 82%, 27%);
+    font-weight: 700;
+    border-radius: 8px;
+    width: 100%;
+    padding: 16px;
+  }
+
