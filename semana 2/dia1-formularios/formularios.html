@@ -189,6 +189,50 @@
                 <input type="submit" value="guardar" />
             </form>
 
+            <form>
+                <h2>Validaciones</h2>
+
+                <label>
+                    nombre (obligatorio)
+                    <input type="text" name="combre" placeholder="carlos oracio" required  maxlength="20"/>
+                </label>
+
+                <label>
+                    Numero
+                    <input type="number" required min="3" max="99"/>
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" placeholder="carlos@gmail.com" name="email" required />
+                </label>
+
+                <label>
+                    Edad
+                    <input type="number" placeholder="20" name="edad" required max="100"/>
+                </label>
+
+                <label>
+                    Telefono
+                    <input type="tel" name="telefono" required placeholder="+51 999999999" pattern="\+[0-9]{2} [0-9]{9}"/>
+                </label>
+
+                <label>
+                    Comidas
+                    <select name="comidas" required>
+                        <option value="">selecciona tu comida favorita</option>
+                        <option value="fr">francesa</option>
+                        <option value="it">italiana</option>
+                        <option value="jp">japonesa</option>
+                        <option value="pe">peruana</option>
+                        <option value="th">tailandesa</option>
+                    </select>
+                    
+                </label>
+
+                <input type="submit" value="guardar" />
+            </form>
+
 
         </form>
     </main>
